@@ -1,0 +1,629 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# Ten program jest darmowy; warunki kopiowania s� opisane w �r�d�ach.
+# Autorzy nie daj� �ADNYCH gwarancji, w tym nawet gwarancji SPRZEDAWALNO�CI
+# lub PRZYDATNO�CI DO KONKRETNYCH CEL�W.
+
+# Ten program zosta� zbudowany dla i386-pc-mingw32
+ 
+
+# Baza danych Make, wy�wietlana na Thu Feb 03 00:06:31 2022
+
+# Zmienne
+
+# automatyczna
+<D = $(patsubst %/,%,$(dir $<))
+# automatyczna
+?F = $(notdir $?)
+# �rodowiskowa
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# makefile
+MAKEFLAGS = Rrqp
+# �rodowiskowa
+VSCODE_LOG_NATIVE = false
+# automatyczna
+?D = $(patsubst %/,%,$(dir $?))
+# automatyczna
+@D = $(patsubst %/,%,$(dir $@))
+# �rodowiskowa
+HOMEDRIVE = C:
+# automatyczna
+@F = $(notdir $@)
+# automatyczna
+^D = $(patsubst %/,%,$(dir $^))
+# makefile
+CURDIR := d:/Studia/Szachy
+# domy�lna
+SHELL := sh.exe
+# �rodowiskowa
+WINDIR = C:\WINDOWS
+# �rodowiskowa
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{},"_languagePackSupport":true}
+# �rodowiskowa
+VBOX_MSI_INSTALL_PATH = D:\Programs\VirtualBox\
+# �rodowiskowa
+PYCHARM COMMUNITY EDITION = D:\Programs\PyCharm Community Edition 2021.3\bin;
+# makefile (z `makefile', linia 2)
+CFLAGS = -c -Wall -Wextra -g3
+# �rodowiskowa
+ONEDRIVE = C:\Users\huawei\OneDrive
+# �rodowiskowa
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (z `makefile', linia 1)
+MAKEFILE_LIST :=  makefile
+# �rodowiskowa
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# �rodowiskowa
+TMP = C:\Users\huawei\AppData\Local\Temp
+# �rodowiskowa
+VSCODE_VERBOSE_LOGGING = true
+# �rodowiskowa
+PROGRAMW6432 = C:\Program Files
+# �rodowiskowa
+PROGRAMDATA = C:\ProgramData
+# �rodowiskowa
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d9cb5092-e754-4644-bebf-1fa8b97a20a8-sock
+# �rodowiskowa
+VSCODE_CWD = D:\Studia\Szachy
+# �rodowiskowa
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;D:\Programs\Anaconda3;D:\Programs\Anaconda3\Library\mingw-w64\bin;D:\Programs\Anaconda3\Library\usr\bin;D:\Programs\Anaconda3\Library\bin;D:\Programs\Anaconda3\Scripts;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Razer Chroma SDK\bin;C:\Program Files\Razer Chroma SDK\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\MinGW\bin;C:\Users\huawei\AppData\Local\Microsoft\WindowsApps;D:\Programs\Microsoft VS Code\bin;C:\Program Files\Java\jdk-17\bin;D:\Programs\CMake\bin;C:\Program Files (x86)\GnuWin32\bin;D:\Programs\Git\cmd;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Users\huawei\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\huawei\AppData\Local\Programs\Python\Python310\;C:\Users\huawei\AppData\Local\Microsoft\WindowsApps;D:\Programs\Microsoft VS Code\bin;C:\ProgramData\huawei\GitHubDesktop\bin;D:\Programs\PyCharm Community Edition 2021.3\bin;;C:\Users\huawei\.dotnet\tools;C:\ProgramData\Huawei\GitHubDesktop\bin
+# �rodowiskowa
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# �rodowiskowa
+PROCESSOR_ARCHITECTURE = x86
+# �rodowiskowa
+USERPROFILE = C:\Users\huawei
+# �rodowiskowa
+ALLUSERSPROFILE = C:\ProgramData
+# �rodowiskowa
+VSCODE_LOG_STACK = false
+# �rodowiskowa
+NUMBER_OF_PROCESSORS = 8
+# �rodowiskowa
+ELECTRON_RUN_AS_NODE = 1
+# domy�lna
+.FEATURES := target-specific order-only second-expansion else-if archives
+# automatyczna
+%F = $(notdir $%)
+# �rodowiskowa
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12852_XUKJLZEJXOYPDQMV
+# �rodowiskowa
+VSCODE_PIPE_LOGGING = true
+# �rodowiskowa
+COMPUTERNAME = LAPTOP-KBOV4AJ0
+# �rodowiskowa
+PROGRAMFILES = C:\Program Files (x86)
+# �rodowiskowa
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# �rodowiskowa
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# �rodowiskowa
+USERNAME = huawei
+# �rodowiskowa
+PUBLIC = C:\Users\Public
+# �rodowiskowa
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# �rodowiskowa
+VSCODE_CLI = 1
+# �rodowiskowa
+VSCODE_CODE_CACHE_PATH = C:\Users\huawei\AppData\Roaming\Code\CachedData\899d46d82c4c95423fb7e10e68eba52050e30ba3
+# �rodowiskowa
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# �rodowiskowa
+COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
+# �rodowiskowa
+LOGONSERVER = \\LAPTOP-KBOV4AJ0
+# �rodowiskowa
+ONEDRIVECONSUMER = C:\Users\huawei\OneDrive
+# �rodowiskowa
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# �rodowiskowa
+USERDOMAIN = LAPTOP-KBOV4AJ0
+# domy�lna
+MAKE = $(MAKE_COMMAND)
+# domy�lna
+MAKECMDGOALS := all
+# makefile (z `makefile', linia 1)
+CC = g++ -I src/include
+# �rodowiskowa
+JAVA_HOME = C:\Program Files\Java\jdk-17
+# domy�lna
+MAKE_VERSION := 3.81
+# makefile
+.DEFAULT_GOAL := all
+# �rodowiskowa
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatyczna
+%D = $(patsubst %/,%,$(dir $%))
+# �rodowiskowa
+LOCALAPPDATA = C:\Users\huawei\AppData\Local
+# �rodowiskowa
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# domy�lna
+MAKE_COMMAND := make.exe
+# �rodowiskowa
+PROCESSOR_ARCHITEW6432 = AMD64
+# domy�lna
+.VARIABLES := 
+# automatyczna
+*F = $(notdir $*)
+# �rodowiskowa
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD
+# �rodowiskowa
+OS = Windows_NT
+# �rodowiskowa
+VSCODE_IPC_HOOK = \\.\pipe\642db39333b668aeea047d04143f6391-1.63.2-main-sock
+# �rodowiskowa
+HOMEPATH = \Users\huawei
+# �rodowiskowa
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# �rodowiskowa
+PROMPT = $P$G
+# �rodowiskowa
+MFLAGS = -Rrqp
+# automatyczna
+*D = $(patsubst %/,%,$(dir $*))
+# �rodowiskowa
+SYSTEMROOT = C:\WINDOWS
+# automatyczna
++D = $(patsubst %/,%,$(dir $+))
+# automatyczna
++F = $(notdir $+)
+# �rodowiskowa
+APPDATA = C:\Users\huawei\AppData\Roaming
+# �rodowiskowa
+TEMP = C:\Users\huawei\AppData\Local\Temp
+# �rodowiskowa
+COMSPEC = C 
+:\WINDOWS\system32\cmd.exe
+# domy�lna
+MAKEFILES := 
+# automatyczna
+<F = $(notdir $<)
+# �rodowiskowa
+LC_ALL = C
+# automatyczna
+^F = $(notdir $^)
+# domy�lna
+SUFFIXES := 
+# �rodowiskowa
+SYSTEMDRIVE = C:
+# �rodowiskowa
+SESSIONNAME = Console
+# �rodowiskowa
+PROCESSOR_REVISION = 1100
+# �rodowiskowa
+MAKELEVEL := 0
+# �rodowiskowa
+LANG = C
+# �rodowiskowa
+PROCESSOR_LEVEL = 23
+# �rodowiskowa
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# �rodowiskowa
+VSCODE_PID = 12852
+# �rodowiskowa
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-KBOV4AJ0
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=96/1024=9%, Przehaszowania=0, Kolizje=9/119=8%
+
+# Warto�ci zmiennych dla wzorca
+
+# Brak warto�ci zmiennych dla wzorca.
+
+# Katalogi
+
+# : stat() zwraca b��d.
+# D:\Programs\Anaconda3 (klucz D:/Programs/Anaconda3, czas modyfikacji 1639337319): 88 pliki, nie niemo�liwo�ci.
+# C:\Program Files\Common Files\Oracle\Java\javapath (klucz C:/Program Files/Common Files/Oracle/Java/javapath, czas modyfikacji 1633439287): 6 pliki, nie niemo�liwo�ci.
+# C:\ProgramData\huawei\GitHubDesktop\bin (klucz C:/ProgramData/huawei/GitHubDesktop/bin, czas modyfikacji 1636325863): 4 pliki, nie niemo�liwo�ci.
+# C:\Program Files (x86)\Razer Chroma SDK\bin (klucz C:/Program Files (x86)/Razer Chroma SDK/bin, czas modyfikacji 1634028067): 45 pliki, nie niemo�liwo�ci.
+# D:\Programs\Git\cmd (klucz D:/Programs/Git/cmd, czas modyfikacji 1636326273): 8 pliki, nie niemo�liwo�ci.
+# C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (klucz C:/WINDOWS/System32/WindowsPowerShell/v1.0/, czas modyfikacji 1631236738): 30 pliki, nie niemo�liwo�ci.
+# C:\WINDOWS\System32\Wbem (klucz C:/WINDOWS/System32/Wbem, czas modyfikacji 1642271460): 155 pliki, nie niemo�liwo�ci.
+# . (klucz d:/Studia/Szachy, czas modyfikacji 1643843172): 51 pliki, nie niemo�liwo�ci.
+# D:\Programs\Anaconda3\Library\usr\bin: stat() zwraca b��d.
+# C:\Users\huawei\AppData\Local\Programs\Python\Python310\ (klucz C:/Users/huawei/AppData/Local/Programs/Python/Python310/, czas modyfikacji 1639307250): 19 pliki, nie niemo�liwo�ci.
+# D:\Programs\Anaconda3\Library\bin (klucz D:/Programs/Anaconda3/Library/bin, czas modyfikacji 1639337225): 451 pliki, nie niemo�liwo�ci.
+# C:\Users\huawei\AppData\Local\Programs\Python\Python310\Scripts\ (klucz C:/Users/huawei/AppData/Local/Programs/Python/Python310/Scripts/, czas modyfikacji 1639307254): 19 pliki, nie niemo�liwo�ci.
+# C:\Program Files\dotnet\ (klucz C:/Program Files/dotnet/, czas modyfikacji 1641841606): 11 pliki, nie niemo�liwo�ci.
+# D:\Programs\Anaconda3\Scripts (klucz D:/Programs/Anaconda3/Scripts, czas modyfikacji 1639339561): 342 pliki, nie niemo�liwo�ci.
+# C:\MinGW\bin (klucz C:/MinGW/bin, czas modyfikacji 1635235823): 144 pliki, nie niemo�liwo�ci.
+# D:\Programs\Anaconda3\Library\mingw-w64\bin (klucz D:/Programs/Anaconda3/Library/mingw-w64/bin, czas modyfikacji 1639337175): 15 pliki, nie niemo�liwo�ci.
+# C:\Users\huawei\.dotnet\tools: stat() zwraca b��d.
+# C:\WINDOWS\System32\OpenSSH\: stat() zwraca b��d.
+# C:\Program Files (x86)\Common Files\Oracle\Java\javapath (klucz C:/Program Files (x86)/Common Files/Oracle/Java/javapath, czas modyfikacji 1642850758): 5 pliki, nie niemo�liwo�ci.
+# D:\Programs\CMake\bin (klucz D:/Programs/CMake/bin, czas modyfikacji 1631229269): 7 pliki, nie niemo�liwo�ci.
+# D:\Programs\PyCharm Community Edition 2021.3\bin (klucz D:/Programs/PyCharm Community Edition 2021.3/bin, czas modyfikacji 1639339138): 29 pliki, nie niemo�liwo�ci.
+# C:\Program Files\Java\jdk-17\bin (klucz C:/Program Files/Java/jdk-17/bin, czas modyfikacji 1633439284): 123 pliki, nie niemo�liwo�ci.
+# C:\Program Files\Microsoft SQL Server\130\Tools\Binn\ (klucz C:/Program Files/Microsoft SQL Server/130/Tools/Binn/, czas modyfikacji 1641841926): 4 pliki, nie niemo�liwo�ci.
+# C:\WINDOWS (klucz C:/WINDOWS, czas modyfikacji 1641843223): 117 pliki, nie niemo�liwo�ci.
+# C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\ (klucz C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/, czas modyfikacji 1641841936): 7 pliki, nie niemo�liwo�ci.
+# C:\Program Files\Intel\WiFi\bin\ (klucz C:/Program Files/Intel/WiFi/bin/, czas modyfikacji 1611167193): 37 pliki, nie niemo�liwo�ci.
+# C:\Program Files\Common Files\Intel\WirelessCommon\ (klucz C:/Program Files/Common Files/Intel/WirelessCommon/, czas modyfikacji 1611167171): 7 pliki, nie niemo�liwo�ci.
+# C:\Users\huawei\AppData\Local\Microsoft\WindowsApps (klucz C:/Users/huawei/AppData/Local/Microsoft/WindowsApps, czas modyfikacji 1642880268): 28 pliki, nie niemo�liwo�ci.
+# C:\Program Files\Razer Chroma SDK\bin (klucz C:/Program Files/Razer Chroma SDK/bin, czas modyfikacji 1632983249): 4 pliki, nie niemo�liwo�ci.
+# D:\Programs\Microsoft VS Code\bin (klucz D:/Programs/Microsoft VS Code/bin, czas modyfikacji 1639751216): 4 pliki, nie niemo�liwo�ci.
+# C:\WINDOWS\system32 (klucz C:/WINDOWS/system32, czas modyfikacji 1643841743): 2909 pliki, nie niemo�liwo�ci.
+# C:\Program Files (x86)\GnuWin32\bin (klucz C:/Program Files (x86)/GnuWin32/bin, czas modyfikacji 1635895394): 5 pliki, nie niemo�liwo�ci.
+
+# 4674 pliki, nie niemo�liwo�ci w 33 katalogach.
+
+# Regu�y stadardowe
+
+# Brak standardowych regu�.
+
+# Pliki
+
+# To nie jest obiekt:
+Pawn.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+Square.o: Square.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:14
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 25):
+	$(CC) $(CFLAGS) Square.cpp
+	
+
+all: GameOfChess run
+#  Obiekt podany w linii polece�.
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Plik nie istnieje.
+#  Plik zosta� uaktualniony.
+#  Powinien by� uaktualniony (-q jest w��czone).
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/3=0%
+
+Rook.o: Rook.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:17
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 40):
+	$(CC) $(CFLAGS) Rook.cpp
+	
+
+GameOfChess: main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ga��� wzorc�w domy�lnych/statycznych: `'
+#  Plik nie istnieje.
+#  Plik zosta� uaktualniony.
+#  Powinien by� uaktualniony (-q jest w��czone).
+# automatyczna
+# @ := GameOfChess
+# automatyczna
+# % := 
+# automatyczna
+# * := 
+# automatyczna
+# + := main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o
+# automatyczna
+# | := 
+# automatyczna
+# < := main.o
+# automatyczna
+# ^ := main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o
+# automatyczna
+# ? := main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=8/32=25%, Przehaszowania=0, Kolizje=1/11=9%
+#  polecenia do wykonania (z `makefile', linia 7):
+	$(CC) main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o -o GameOfChess -L src/lib -l sfml-graphics -l sfml-window -l sfml-system
+	
+
+# To nie jest obiekt:
+Knight.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+# To nie jest obiekt:
+.DEFAULT:
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+
+# To nie jest obiekt:
+ChessBoard.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+# To nie jest obiekt:
+Queen.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+Piece.o: Piece.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:19
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 49):
+	$(CC) $(CFLAGS) Piece.cpp
+	
+
+# To nie jest obiekt:
+Game.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+# To nie jest obiekt:
+makefile:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+# To nie jest obiekt:
+Bishop.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+King.o: King.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:15
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 28):
+	$(CC) $(CFLAGS) King.cpp
+	
+
+# To nie jest obiekt:
+main.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+Pawn.o: Pawn.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:15
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 31):
+	$(CC) $(CFLAGS) Pawn.cpp
+	
+
+# To nie jest obiekt:
+DisplayManager.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+# To nie jest obiekt:
+.SUFFIXES:
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+
+# To nie jest obiekt:
+Player.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+RestrictedPiece.o: RestrictedPiece.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:18
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 46):
+	$(CC) $(CFLAGS) RestrictedPiece.cpp
+	
+
+# To nie jest obiekt:
+Square.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+Knight.o: Knight.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:16
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 34):
+	$(CC) $(CFLAGS) Knight.cpp
+	
+
+ChessBoard.o: ChessBoard.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:14
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 22):
+	$(CC) $(CFLAGS) ChessBoard.cpp
+	
+
+run:
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+#  polecenia do wykonania (z `makefile', linia 57):
+	./GameOfChess
+	
+
+# To nie jest obiekt:
+Rook.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+clean:
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+#  polecenia do wykonania (z `makefile', linia 54):
+	del *.o GameOfChess.exe
+	
+
+Game.o: Game.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 13):
+	$(CC) $(CFLAGS) Game.cpp
+	
+
+Bishop.o: Bishop.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:17
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 37):
+	$(CC) $(CFLAGS) Bishop.cpp
+	
+
+main.o: main.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 10):
+	$(CC) $(CFLAGS) main.cpp
+	
+
+# To nie jest obiekt:
+Piece.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+Queen.o: Queen.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:18
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 43):
+	$(CC) $(CFLAGS) Queen.cpp
+	
+
+DisplayManager.o: DisplayManager.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:12
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 16):
+	$(CC) $(CFLAGS) DisplayManager.cpp
+	
+
+# To nie jest obiekt:
+King.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+# To nie jest obiekt:
+RestrictedPiece.cpp:
+#  Szukanie regu� domy�lnych zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-01-31 18:31:11
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+Player. 
+o: Player.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Ostatnio modyfikowany 2022-02-03 00:00:13
+#  Plik zosta� uaktualniony.
+#  Uaktualnienie powiod�o si�.
+# statystyki tablic haszuj�cych ustawionych zmiennych:
+# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  polecenia do wykonania (z `makefile', linia 19):
+	$(CC) $(CFLAGS) Player.cpp
+	
+
+# statystyki tablic haszuj�cych plik�w:
+# Wype�nienie=35/1024=3%, Przehaszowania=0, Kolizje=8/78=10%
+# �cie�ki przeszukiwania VPATH
+
+# Brak �cie�ek przeszukiwania `vpath'
+
+# Brak og�lnej (zmienna `VPATH') �cie�ki przeszukiwania.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Zako�czono tworzenie bazy danych Make na Thu Feb 03 00:06:31 2022
+
+ 
