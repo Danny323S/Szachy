@@ -8,7 +8,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # Ten program zosta� zbudowany dla i386-pc-mingw32
  
 
-# Baza danych Make, wy�wietlana na Thu Feb 03 02:14:44 2022
+# Baza danych Make, wy�wietlana na Thu Feb 03 13:00:32 2022
 
 # Zmienne
 
@@ -49,8 +49,7 @@ CFLAGS = -c -Wall -Wextra -g3
 # �rodowiskowa
 ONEDRIVE = C:\Users\huawei\OneDrive
 # �rodowiskowa
-PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MS 
-C
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (z `makefile', linia 1)
 MAKEFILE_LIST :=  makefile
 # �rodowiskowa
@@ -64,7 +63,7 @@ PROGRAMW6432 = C:\Program Files
 # �rodowiskowa
 PROGRAMDATA = C:\ProgramData
 # �rodowiskowa
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-d32de7ee-ae87-414f-94de-1334361c6544-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-552f9492-c9e8-4b1b-a606-ace9a27c9b42-sock
 # �rodowiskowa
 VSCODE_CWD = D:\Studia\Szachy
 # �rodowiskowa
@@ -88,7 +87,7 @@ ELECTRON_RUN_AS_NODE = 1
 # automatyczna
 %F = $(notdir $%)
 # �rodowiskowa
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12852_XUKJLZEJXOYPDQMV
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_15572_KXJLXFNAUQBUEDNC
 # �rodowiskowa
 VSCODE_PIPE_LOGGING = true
 # �rodowiskowa
@@ -114,7 +113,8 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # �rodowiskowa
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # �rodowiskowa
-LOGONSERVER = \\LAPTOP-KBOV4AJ0
+LOGONSERVER = \\LAP 
+TOP-KBOV4AJ0
 # �rodowiskowa
 ONEDRIVECONSUMER = C:\Users\huawei\OneDrive
 # �rodowiskowa
@@ -202,7 +202,7 @@ PROCESSOR_LEVEL = 23
 # �rodowiskowa
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # �rodowiskowa
-VSCODE_PID = 12852
+VSCODE_PID = 15572
 # �rodowiskowa
 USERDOMAIN_ROAMINGPROFILE = LAPTOP-KBOV4AJ0
 # statystyki tablic haszuj�cych ustawionych zmiennych:
@@ -222,7 +222,7 @@ USERDOMAIN_ROAMINGPROFILE = LAPTOP-KBOV4AJ0
 # D:\Programs\Git\cmd (klucz D:/Programs/Git/cmd, czas modyfikacji 1636326273): 8 pliki, nie niemo�liwo�ci.
 # C:\WINDOWS\System32\WindowsPowerShell\v1.0\ (klucz C:/WINDOWS/System32/WindowsPowerShell/v1.0/, czas modyfikacji 1631236738): 30 pliki, nie niemo�liwo�ci.
 # C:\WINDOWS\System32\Wbem (klucz C:/WINDOWS/System32/Wbem, czas modyfikacji 1642271460): 155 pliki, nie niemo�liwo�ci.
-# . (klucz d:/Studia/Szachy, czas modyfikacji 1643850857): 52 pliki, nie niemo�liwo�ci.
+# . (klucz d:/Studia/Szachy, czas modyfikacji 1643889215): 51 pliki, nie niemo�liwo�ci.
 # D:\Programs\Anaconda3\Library\usr\bin: stat() zwraca b��d.
 # C:\Users\huawei\AppData\Local\Programs\Python\Python310\ (klucz C:/Users/huawei/AppData/Local/Programs/Python/Python310/, czas modyfikacji 1639307250): 19 pliki, nie niemo�liwo�ci.
 # D:\Programs\Anaconda3\Library\bin (klucz D:/Programs/Anaconda3/Library/bin, czas modyfikacji 1639337225): 451 pliki, nie niemo�liwo�ci.
@@ -248,7 +248,7 @@ USERDOMAIN_ROAMINGPROFILE = LAPTOP-KBOV4AJ0
 # C:\WINDOWS\system32 (klucz C:/WINDOWS/system32, czas modyfikacji 1643841743): 2909 pliki, nie niemo�liwo�ci.
 # C:\Program Files (x86)\GnuWin32\bin (klucz C:/Program Files (x86)/GnuWin32/bin, czas modyfikacji 1635895394): 5 pliki, nie niemo�liwo�ci.
 
-# 4675 pliki, nie niemo�liwo�ci w 33 katalogach.
+# 4674 pliki, nie niemo�liwo�ci w 33 katalogach.
 
 # Regu�y stadardowe
 
@@ -262,11 +262,17 @@ Pawn.cpp:
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
 
+# To nie jest obiekt:
+TexturesManager.cpp:
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+
 Square.o: Square.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 25):
+#  polecenia do wykonania (z `makefile', linia 42):
 	$(CC) $(CFLAGS) Square.cpp
 	
 
@@ -283,19 +289,19 @@ Rook.o: Rook.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 40):
+#  polecenia do wykonania (z `makefile', linia 57):
 	$(CC) $(CFLAGS) Rook.cpp
 	
 
-GameOfChess: main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o
+GameOfChess: main.o Game.o MainWindow.o TexturesManager.o ChessboardSprite.o PieceSprite.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Plik nie istnieje.
 #  Plik zosta� uaktualniony.
 #  Powinien by� uaktualniony (-q jest w��czone).
 # statystyki tablic haszuj�cych ustawionych zmiennych:
 # Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/4=0%
-#  polecenia do wykonania (z `makefile', linia 7):
-	$(CC) main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o -o GameOfChess -L src/lib -l sfml-graphics -l sfml-window -l sfml-system
+#  polecenia do wykonania (z `makefile', linia 12):
+	$(CC) main.o Game.o MainWindow.o TexturesManager.o ChessboardSprite.o PieceSprite.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o -o GameOfChess -L src/lib -l sfml-graphics -l sfml-window -l sfml-system
 	
 
 # To nie jest obiekt:
@@ -316,8 +322,22 @@ ChessBoard.cpp:
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
 
+ChessboardSprite.o: ChessboardSprite.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+#  polecenia do wykonania (z `makefile', linia 27):
+	$(CC) $(CFLAGS) ChessboardSprite.cpp
+	
+
 # To nie jest obiekt:
 Queen.cpp:
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+
+# To nie jest obiekt:
+MainWindow.cpp:
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
@@ -326,24 +346,21 @@ Piece.o: Piece.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 49):
+#  polecenia do wykonania (z `makefile', linia 66):
 	$(CC) $(CFLAGS) Piece.cpp
 	
 
 # To nie jest obiekt:
 Game.cpp:
-#  Szukanie regu� domy�lnych zosta�o wykonane.
-#  Ostatnio modyfikowany 2022-02-03 01:10:25
-#  Plik zosta� uaktualniony.
-#  Uaktualnienie powiod�o si�.
-# statystyki tablic haszuj�cych ustawionych zmiennych:
-# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
 
 test:
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 60):
+#  polecenia do wykonania (z `makefile', linia 78):
 	g++ -c test.cpp -I src/include
 	g++ -I src/include test.o -o test -L src/lib -l sfml-graphics -l sfml-window -l sfml-system
 	del test.o
@@ -353,7 +370,7 @@ test:
 # To nie jest obiekt:
 makefile:
 #  Szukanie regu� domy�lnych zosta�o wykonane.
-#  Ostatnio modyfikowany 2022-02-03 02:14:39
+#  Ostatnio modyfikowany 2022-02-02 13:48:15
 #  Plik zosta� uaktualniony.
 #  Uaktualnienie powiod�o si�.
 # statystyki tablic haszuj�cych ustawionych zmiennych:
@@ -369,35 +386,46 @@ King.o: King.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 28):
+#  polecenia do wykonania (z `makefile', linia 45):
 	$(CC) $(CFLAGS) King.cpp
 	
 
 # To nie jest obiekt:
 main.cpp:
 #  Szukanie regu� domy�lnych zosta�o wykonane.
-#  Ostatnio modyfikowany 2022-02-03 01:08:42
+#  Ostatnio modyfikowany 2022-02-03 12:57:23
 #  Plik zosta� uaktualniony.
 #  Uaktualnienie powiod�o si�.
 # statystyki tablic haszuj�cych ustawionych zmiennych:
 # Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+
+# To nie jest obiekt:
+PieceSprite.cpp:
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
 
 Pawn.o: Pawn.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 31):
+#  polecenia do wykonania (z `makefile', linia 48):
 	$(CC) $(CFLAGS) Pawn.cpp
+	
+
+TexturesManager.o: TexturesManager.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+#  polecenia do wykonania (z `makefile', linia 24):
+	$(CC) $(CFLAGS) TexturesManager.cpp
 	
 
 # To nie jest obiekt:
 DisplayManager.cpp:
-#  Szukanie regu� domy�lnych zosta�o wykonane.
-#  Ostatnio modyfikowany 2022-01-31 18:31:11
-#  Plik zosta� uaktualniony.
-#  Uaktualnienie powiod�o si�.
-# statystyki tablic haszuj�cych ustawionych zmiennych:
-# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
 
 # To nie jest obiekt:
 .SUFFIXES:
@@ -407,18 +435,15 @@ DisplayManager.cpp:
 
 # To nie jest obiekt:
 Player.cpp:
-#  Szukanie regu� domy�lnych zosta�o wykonane.
-#  Ostatnio modyfikowany 2022-02-03 02:05:11
-#  Plik zosta� uaktualniony.
-#  Uaktualnienie powiod�o si�.
-# statystyki tablic haszuj�cych ustawionych zmiennych:
-# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
 
 RestrictedPiece.o: RestrictedPiece.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 46):
+#  polecenia do wykonania (z `makefile', linia 63):
 	$(CC) $(CFLAGS) RestrictedPiece.cpp
 	
 
@@ -432,7 +457,7 @@ Knight.o: Knight.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 34):
+#  polecenia do wykonania (z `makefile', linia 51):
 	$(CC) $(CFLAGS) Knight.cpp
 	
 
@@ -440,15 +465,23 @@ ChessBoard.o: ChessBoard.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 22):
+#  polecenia do wykonania (z `makefile', linia 39):
 	$(CC) $(CFLAGS) ChessBoard.cpp
+	
+
+MainWindow.o: MainWindow.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+#  polecenia do wykonania (z `makefile', linia 21):
+	$(CC) $(CFLAGS) MainWindow.cpp
 	
 
 run:
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 57):
+#  polecenia do wykonania (z `makefile', linia 74):
 	./GameOfChess
 	
 
@@ -462,37 +495,57 @@ clean:
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 54):
-	del *.o GameOfChess.exe
+#  polecenia do wykonania (z `makefile', linia 71):
+	del *.o *.exe
 	
 
 Game.o: Game.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
-#  Ostatnio modyfikowany 2022-02-03 01:43:54
-#  Plik zosta� uaktualniony.
-#  Uaktualnienie powiod�o si�.
-# statystyki tablic haszuj�cych ustawionych zmiennych:
-# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
-#  polecenia do wykonania (z `makefile', linia 13):
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+#  polecenia do wykonania (z `makefile', linia 18):
 	$(CC) $(CFLAGS) Game.cpp
 	
+
+# To nie jest obiekt:
+ChessboardSprite.cpp:
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
 
 Bishop.o: Bishop.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 37):
+#  polecenia do wykonania (z `makefile', linia 54):
 	$(CC) $(CFLAGS) Bishop.cpp
 	
 
 main.o: main.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
-#  Ostatnio modyfikowany 2022-02-03 01:43:53
+#  Ga��� wzorc�w domy�lnych/statycznych: `'
+#  Plik nie istnieje.
 #  Plik zosta� uaktualniony.
-#  Uaktualnienie powiod�o si�.
+#  Powinien by� uaktualniony (-q jest w��czone).
+# automatyczna
+# @ := main.o
+# automatyczna
+# % := 
+# automatyczna
+# * := 
+# automatyczna
+# + := main.cpp
+# automatyczna
+# | := 
+# automatyczna
+# < := main.cpp
+# automatyczna
+# ^ := main.cpp
+# automatyczna
+# ? := main.cpp
 # statystyki tablic haszuj�cych ustawionych zmiennych:
-# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
-#  polecenia do wykonania (z `makefile', linia 10):
+# Wype�nienie=8/32=25%, Przehaszowania=0, Kolizje=1/12=8%
+#  polecenia do wykonania (z `makefile', linia 15):
 	$(CC) $(CFLAGS) main.cpp
 	
 
@@ -506,18 +559,23 @@ Queen.o: Queen.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
 #  Czas modyfikacji nie by� sprawdzany.
 #  Plik nie zosta� uaktualniony.
-#  polecenia do wykonania (z `makefile', linia 43):
+#  polecenia do wykonania (z `makefile', linia 60):
 	$(CC) $(CFLAGS) Queen.cpp
+	
+
+PieceSprite.o: PieceSprite.cpp
+#  Szukanie regu� domy�lnych nie zosta�o wykonane.
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+#  polecenia do wykonania (z `makefile', linia 30):
+	$(CC) $(CFLAGS) PieceSprite.cpp
 	
 
 DisplayManager.o: DisplayManager.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
-#  Ostatnio modyfikowany 2022-02-03 01:43:55
-#  Plik zosta� uaktualniony.
-#  Uaktualnienie powiod�o si�.
-# statystyki tablic haszuj�cych ustawionych zmiennych:
-# Wype�nienie=0/32=0%, Przehaszowania=0, Kolizje=0/0=0%
-#  polecenia do wykonania (z `makefile', linia 16):
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+#  polecenia do wykonania (z `makefile', linia 33):
 	$(CC) $(CFLAGS) DisplayManager.cpp
 	
 
@@ -535,35 +593,14 @@ RestrictedPiece.cpp:
 
 Player.o: Player.cpp
 #  Szukanie regu� domy�lnych nie zosta�o wykonane.
-#  
- Ga��� wzorc�w domy�lnych/statycznych: `'
-#  Ostatnio modyfikowany 2022-02-03 01:56:01
-#  Plik zosta� uaktualniony.
-#  Powinien by� uaktualniony (-q jest w��czone).
-# automatyczna
-# @ := Player.o
-# automatyczna
-# % := 
-# automatyczna
-# * := 
-# automatyczna
-# + := Player.cpp
-# automatyczna
-# | := 
-# automatyczna
-# < := Player.cpp
-# automatyczna
-# ^ := Player.cpp
-# automatyczna
-# ? := Player.cpp
-# statystyki tablic haszuj�cych ustawionych zmiennych:
-# Wype�nienie=8/32=25%, Przehaszowania=0, Kolizje=1/12=8%
-#  polecenia do wykonania (z `makefile', linia 19):
+#  Czas modyfikacji nie by� sprawdzany.
+#  Plik nie zosta� uaktualniony.
+#  polecenia do wykonania (z `makefile', linia 36):
 	$(CC) $(CFLAGS) Player.cpp
 	
 
 # statystyki tablic haszuj�cych plik�w:
-# Wype�nienie=36/1024=4%, Przehaszowania=0, Kolizje=8/79=10%
+# Wype�nienie=44/1024=4%, Przehaszowania=0, Kolizje=8/95=8%
 # �cie�ki przeszukiwania VPATH
 
 # Brak �cie�ek przeszukiwania `vpath'
@@ -575,6 +612,6 @@ Player.o: Player.cpp
 # strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
 # strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
 
-# Zako�czono tworzenie bazy danych Make na Thu Feb 03 02:14:44 2022
+# Zako�czono tworzenie bazy danych Make na Thu Feb 03 13:00:32 2022
 
  

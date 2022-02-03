@@ -40,6 +40,10 @@ void Game::turn(int selected_piece_file, int selected_piece_rank, int destinatio
 
 }
 
+Chessboard* Game::getChessboard() {
+    return &this->board;
+}
+
 // void Game::turn(int selected_piece_file, int selected_piece_rank, int destination_file, int destination_rank) {
 //     // Opis przebiegu tury
 //     // Gracz którego jest tura musi wybrać pionek

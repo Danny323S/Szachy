@@ -3,14 +3,31 @@ CFLAGS=-c -Wall -Wextra -g3
 
 all: GameOfChess run
 
-GameOfChess: main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o  
-	$(CC) main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o -o GameOfChess -L src/lib -l sfml-graphics -l sfml-window -l sfml-system
+
+#MainWindow
+#ChessboardSprite
+#PieceSprite
+
+GameOfChess: main.o Game.o MainWindow.o TexturesManager.o ChessboardSprite.o PieceSprite.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o  
+	$(CC) main.o Game.o MainWindow.o TexturesManager.o ChessboardSprite.o PieceSprite.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o -o GameOfChess -L src/lib -l sfml-graphics -l sfml-window -l sfml-system
 
 main.o: main.cpp
 	$(CC) $(CFLAGS) main.cpp
 
 Game.o: Game.cpp
 	$(CC) $(CFLAGS) Game.cpp
+
+MainWindow.o: MainWindow.cpp
+	$(CC) $(CFLAGS) MainWindow.cpp
+
+TexturesManager.o: TexturesManager.cpp
+	$(CC) $(CFLAGS) TexturesManager.cpp
+
+ChessboardSprite.o: ChessboardSprite.cpp
+	$(CC) $(CFLAGS) ChessboardSprite.cpp
+
+PieceSprite.o: PieceSprite.cpp
+	$(CC) $(CFLAGS) PieceSprite.cpp
 
 DisplayManager.o: DisplayManager.cpp
 	$(CC) $(CFLAGS) DisplayManager.cpp
@@ -51,10 +68,11 @@ Piece.o: Piece.cpp
 #.PHONY : clean
 
 clean:
-	del *.o GameOfChess.exe
+	del *.o *.exe
 
 run:
 	./GameOfChess
+
 
 test: #kompilacja i uruchomienie pliku testowego
 	g++ -c test.cpp -I src/include

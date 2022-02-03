@@ -52,12 +52,12 @@ bool Player::movePiece(int file, int rank) {
             std::cout << selected_piece->getRank() << ")" << std::endl;
 
         //implementacja funkcji update dla szachownicy
-        if(capture_file != -1 && capture_rank != -1){
-            piece_to_capture = chessboard->getSquareAt(capture_file, capture_rank)->getOccupant();
-        } else piece_to_capture = nullptr;
+            if(capture_file != -1 && capture_rank != -1){
+                piece_to_capture = chessboard->getSquareAt(capture_file, capture_rank)->getOccupant();
+            } else piece_to_capture = nullptr;
 
-        chessboard->update(selected_piece, file, rank, piece_to_capture);
-    //###########################################################################################################
+            chessboard->update(selected_piece, file, rank, piece_to_capture);
+//###########################################################################################################
             // //ustawienie pola na którym poprzednio znajdował się pionek na puste
             // chessboard->getSquareAt(selected_piece->getFile(), selected_piece->getRank())->setOccupant(nullptr);
 
@@ -69,8 +69,7 @@ bool Player::movePiece(int file, int rank) {
             // //umieszczenie poruszanego pionka na docelowym polu 
             // chessboard->getSquareAt(file, rank)->setOccupant(selected_piece);
             // selected_piece = nullptr;
-    //###########################################################################################################
-
+//###########################################################################################################
             return true;
         } else {
             std::cout << "Pozycja nie zgodna ze schematem ruchow pionka. \n";
