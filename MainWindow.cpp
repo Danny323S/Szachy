@@ -23,6 +23,7 @@ void MainWindow::render() {
     for (unsigned int i = 0; i < chessboard_sprite->getSquares()->size(); i++) {
         main_window.draw(chessboard_sprite->getSquares()->at(i));
     }
+
     //rysowanie pionków
     for (unsigned int i = 0; i < chessboard_sprite->getPiecesSprites()->size(); i++) {
         main_window.draw(*chessboard_sprite->getPiecesSprites()->at(i).getSprite());
@@ -64,6 +65,7 @@ void MainWindow::run() {
             pressed_rank_1 = -1;
             pressed_file_2 = -1;
             pressed_rank_2 = -1;
+            chessboard_sprite->updateSpritesPositions();
         }
 
         render();

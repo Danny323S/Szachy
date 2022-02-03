@@ -33,7 +33,7 @@ ChessboardSprite::ChessboardSprite(Chessboard *chessboard) {
             if (chessboard->getSquareAt(x,y)->isOccupied() == true) {
                 pieces_sprites.push_back(PieceSprite(chessboard->getSquareAt(x,y)->getOccupant()));
                 pieces_sprites.back().getSprite()->setTexture(*textures_manager.getTexture(chessboard->getSquareAt(x,y)->getOccupant()));
-                pieces_sprites.back().setSpritePosition(sf::Vector2f(x*(window_size.x/8), (-1)*(y-7)*(window_size.y/8)));
+                pieces_sprites.back().getSprite()->setPosition(sf::Vector2f(x*(window_size.x/8), (-1)*(y-7)*(window_size.y/8)));
             }
         }
     }    
@@ -56,5 +56,7 @@ std::vector<PieceSprite> *ChessboardSprite::getPiecesSprites() {
 }
 
 void ChessboardSprite::updateSpritesPositions() {
-    
+    for (unsigned int i = 0; i < pieces_sprites.size(); i++) {
+        pieces_sprites.at(i).updatePosition();
+    }
 }
