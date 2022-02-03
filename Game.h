@@ -20,8 +20,8 @@ private:
 
 public:
     Game();
-    bool run();
-    void turn();    
+    bool run(int selected_piece_file, int selected_piece_rank, int destination_file, int destination_rank);
+    void turn(int selected_piece_file, int selected_piece_rank, int destination_file, int destination_rank);    
 };
 
 #endif

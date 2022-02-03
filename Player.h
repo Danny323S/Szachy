@@ -18,7 +18,7 @@ private:
 
 public:
     Player(Color color, Chessboard &chessboard);
-    void selectPiece(int file, int rank); //select piece at selected Square
+    bool selectPiece(int file, int rank); //select piece at selected Square
     Piece* getSelectedPiece();
     bool movePiece(int file, int rank); //move selected piece at selected square; 
 };

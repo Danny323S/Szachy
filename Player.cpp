@@ -13,7 +13,7 @@ Player::Player(Color color, Chessboard &chessboard) {
     this->selected_piece = NULL; 
 }
 
-void Player::selectPiece(int file, int rank) {
+bool Player::selectPiece(int file, int rank) {
     //do klasy ChessBoard wysyłane jest zapytanie czy pionek na polu (rank, file)
     //może zostać wybrany przez gracza
     //jeżeli na wskazanym polu znajduje się pionek i jest on koloru gracza
@@ -21,9 +21,13 @@ void Player::selectPiece(int file, int rank) {
     // board->getSquareAt(rank, file)
 
     if(chessboard->getSquareAt(file, rank)->isOccupied()) {
-        if (chessboard->getSquareAt(file, rank)->getOccupant()->getColor() == this->color)
+        if (chessboard->getSquareAt(file, rank)->getOccupant()->getColor() == this->color) {
             selected_piece = chessboard->getSquareAt(file, rank)->getOccupant();
-    }    
+            return true;
+        } else
+            selected_piece = nullptr;
+    }
+    return false;
 }
 
 //funkcja zwraca wartość true jezeli pionek został poruszony
