@@ -115,19 +115,18 @@ bool Chessboard::isDiagonalClear(int from_file, int from_rank, int to_file, int 
         }
     } else {
         for (int i = 0; i <= from_r - to_r; i++) {
-            if(this->getSquareAt(from_f - i, from_r - i)->isOccupied())
+            if(this->getSquareAt(from_f + i, from_r - i)->isOccupied())
                 return false;
         }
     }
 
-    return false;
+    return true;
 }
 
 void Chessboard::capture(int file, int rank) {
     delete this->getSquareAt(file, rank)->getOccupant();
     this->getSquareAt(file, rank)->setOccupant(nullptr);
 }
-
 
 void Chessboard::castling(Piece *piece_to_move, int de_file, int de_rank) {
     if (!piece_to_move->wasItMoved()) {

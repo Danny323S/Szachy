@@ -1,5 +1,6 @@
 #ifndef BISHOP_H
 #define BISHOP_H
+#include "Chessboard.h"
 #include "Piece.h"
 
 class Bishop : public Piece {
