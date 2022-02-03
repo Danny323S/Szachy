@@ -7,11 +7,12 @@ private:
     bool moved;
 
 protected:
-    RestrictedPiece(Color color, Chessboard *chessboard);
-    void hasMoved();
+    RestrictedPiece(Color color, Chessboard *chessboard); 
+    void hasMoved() override;
 
 public:
-    bool wasItMoved();
+    bool wasItMoved() override;
 };
 
 #endif
+

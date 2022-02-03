@@ -36,6 +36,7 @@ public:
     virtual bool checkMove(int de_file, int de_rank, int &capture_file, int &capture_rank) = 0; //destination file, rank
     virtual bool canBeCapturedEnPassant();
     virtual bool wasItMoved();
+    virtual void hasMoved();
 };
 
 #endif

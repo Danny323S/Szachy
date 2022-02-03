@@ -5,7 +5,7 @@ RestrictedPiece::RestrictedPiece(Color color, Chessboard *chessboard) : Piece(co
 }
 
 void RestrictedPiece::hasMoved() {
-    moved == true;
+    this->moved = true;
 } 
 
 bool RestrictedPiece::wasItMoved() {

@@ -1,5 +1,7 @@
 #ifndef KNIGHT_H
 #define KNIGHT_H
+#include <cmath>
+#include "Chessboard.h"
 #include "Piece.h"
 
 class Knight : public Piece {

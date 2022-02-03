@@ -150,6 +150,7 @@ void Chessboard::castling(Piece *piece_to_move, int de_file, int de_rank) {
 void Chessboard::move(Piece *piece_to_move, int de_file, int de_rank) {
     getSquareAt(piece_to_move->getFile(), piece_to_move->getRank())->setOccupant(nullptr);
     getSquareAt(de_file, de_rank)->setOccupant(piece_to_move);
+    piece_to_move->hasMoved();
 }
 
 void Chessboard::update(Piece *piece_to_move, int de_file, int de_rank, Piece *piece_to_capture) {

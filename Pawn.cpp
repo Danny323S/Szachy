@@ -53,7 +53,7 @@ bool Pawn::checkMove(int de_file, int de_rank, int &capture_file, int &capture_r
         if(!this->wasItMoved()) {
             if(getChessboard()->isFileClear(this->getFile(), this->getRank() + 1*y_direction, de_rank) == true) {
                 this->en_passant_move = true;
-                this->hasMoved(); //Powinno być w klasie gracza
+                //Powinno być w klasie gracza
                 return true;
             }
         }

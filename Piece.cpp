@@ -46,3 +46,7 @@ bool Piece::canBeCapturedEnPassant() {
 bool Piece::wasItMoved() {
     return true;
 }
+
+void Piece::hasMoved() {
+    std::cout << "hasMoved() dla klasy Piece\n";
+}
