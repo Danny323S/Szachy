@@ -55,6 +55,7 @@ Square* Chessboard::getSquareAt(int file , int rank) {
     return &chessboard[file][rank];
 }
 
+
 bool Chessboard::isRankClear(int rakn, int from_file, int to_file) {
     int from = 0, to = 0;
 
@@ -123,6 +124,7 @@ bool Chessboard::isDiagonalClear(int from_file, int from_rank, int to_file, int 
     return true;
 }
 
+
 void Chessboard::capture(int file, int rank) {
     delete this->getSquareAt(file, rank)->getOccupant();
     this->getSquareAt(file, rank)->setOccupant(nullptr);
@@ -132,15 +134,15 @@ void Chessboard::castling(Piece *piece_to_move, int de_file, int de_rank) {
     if (!piece_to_move->wasItMoved()) {
         if(piece_to_move->getRank() == 0 && piece_to_move->getFile() == 4) {
             if (de_file == 6 && de_rank == 0) {
-                move(getSquareAt(0,0)->getOccupant() , 5, 0);
+                move(getSquareAt(7,0)->getOccupant() , 5, 0);
             } else if (de_file == 2 && de_rank == 0) {
-                move(getSquareAt(7,0)->getOccupant(), 4, 0);
+                move(getSquareAt(0,0)->getOccupant(), 3, 0);
             }
         } else if (piece_to_move->getRank() == 7 && piece_to_move->getFile() == 4) {
             if (de_file == 6 && de_rank == 7) {
                 move(getSquareAt(7,7)->getOccupant() , 5, 7);
             } else if (de_file == 2 && de_rank == 7) {
-                move(getSquareAt(7,0)->getOccupant(), 4, 7);
+                move(getSquareAt(0,7)->getOccupant(), 3, 7);
             }
         }
     }
@@ -152,10 +154,15 @@ void Chessboard::move(Piece *piece_to_move, int de_file, int de_rank) {
     piece_to_move->hasMoved();
 }
 
+void Chessboard::promote() {
+    
+}
+
 void Chessboard::update(Piece *piece_to_move, int de_file, int de_rank, Piece *piece_to_capture) {
     if (piece_to_capture != nullptr){
         capture(piece_to_capture->getFile(), piece_to_capture->getRank());
     }
+    castling(piece_to_move, de_file, de_rank);
     move(piece_to_move, de_file, de_rank);
 }
 

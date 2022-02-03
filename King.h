@@ -1,5 +1,6 @@
 #ifndef KING_H
 #define KING_H
+#include "Chessboard.h"
 #include "RestrictedPiece.h"
 
 class King : public RestrictedPiece {
