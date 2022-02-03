@@ -3,9 +3,9 @@
 MainWindow::MainWindow() : game() {
     main_window.create(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "Game of Chess");
     main_window.setFramerateLimit(60);
-    
-    // game = Game(); -- ??????
+
     chessboard_sprite = new ChessboardSprite(game.getChessboard());
+
     pressed_file_1 = -1;
     pressed_rank_1 = -1;
     pressed_file_2 = -1;
@@ -61,6 +61,7 @@ void MainWindow::run() {
 
         if (pressed_file_1 != -1 && pressed_file_2 != -1){
             game.run(pressed_file_1, pressed_rank_1, pressed_file_2, pressed_rank_2);
+            
             pressed_file_1 = -1;
             pressed_rank_1 = -1;
             pressed_file_2 = -1;

@@ -1,5 +1,6 @@
 #ifndef PAWN_H
 #define PAWN_H
+#include <typeinfo>
 #include "RestrictedPiece.h"
 #include "Chessboard.h"
 

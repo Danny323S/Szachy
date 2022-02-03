@@ -1,6 +1,7 @@
 #ifndef CHESSBOARD_H
 #define CHESSBOARD_H
 #include <vector>
+#include <typeinfo>
 #include "Square.h"
 #include "Pawn.h"
 #include "Queen.h"
@@ -25,7 +26,7 @@ private:
     void capture(int piece_file, int piece_rank);
     void castling(Piece *piece_to_move, int de_file, int de_rank);
     void move(Piece *piece_to_move, int de_file, int de_rank);
-    void promote();
+    bool promote();
 
 public: 
     Chessboard();

@@ -2,6 +2,7 @@
 
 Pawn::Pawn(Color color, Chessboard *chessboard) : RestrictedPiece(color, chessboard) {
     this->type = Type::TPawn;
+    
 }
 
 Pawn::~Pawn() {
