@@ -4,7 +4,7 @@
 
 class Knight : public Piece {
 private:
-    bool checkMove(int de_file, int de_rank)override;
+    bool checkMove(int de_file, int de_rank, int &capture_file, int &capture_rank) override;
 
 public:
     Knight(Color color, Chessboard *chessboard);

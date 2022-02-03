@@ -128,8 +128,34 @@ void Chessboard::capture(int file, int rank) {
     this->getSquareAt(file, rank)->setOccupant(nullptr);
 }
 
-void Chessboard::update(/*int de_file, int de_rank, int c_file, int c_rank*/) {
-    //move
-    //capture
+
+void Chessboard::castling(Piece *piece_to_move, int de_file, int de_rank) {
+    if (!piece_to_move->wasItMoved()) {
+        if(piece_to_move->getRank() == 0 && piece_to_move->getFile() == 4) {
+            if (de_file == 6 && de_rank == 0) {
+                move(getSquareAt(0,0)->getOccupant() , 5, 0);
+            } else if (de_file == 2 && de_rank == 0) {
+                move(getSquareAt(7,0)->getOccupant(), 4, 0);
+            }
+        } else if (piece_to_move->getRank() == 7 && piece_to_move->getFile() == 4) {
+            if (de_file == 6 && de_rank == 7) {
+                move(getSquareAt(7,7)->getOccupant() , 5, 7);
+            } else if (de_file == 2 && de_rank == 7) {
+                move(getSquareAt(7,0)->getOccupant(), 4, 7);
+            }
+        }
+    }
+}
+
+void Chessboard::move(Piece *piece_to_move, int de_file, int de_rank) {
+    getSquareAt(piece_to_move->getFile(), piece_to_move->getRank())->setOccupant(nullptr);
+    getSquareAt(de_file, de_rank)->setOccupant(piece_to_move);
+}
+
+void Chessboard::update(Piece *piece_to_move, int de_file, int de_rank, Piece *piece_to_capture) {
+    if (piece_to_capture != nullptr){
+        capture(piece_to_capture->getFile(), piece_to_capture->getRank());
+    }
+    move(piece_to_move, de_file, de_rank);
 }
 

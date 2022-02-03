@@ -21,6 +21,7 @@ protected:
     Type type;
 
 public:
+    Piece();
     Piece(Color color, Chessboard *chessboard);
     virtual ~Piece();
 
@@ -32,8 +33,9 @@ public:
     void setPosition(int file, int rank);
 
     Chessboard* getChessboard();                       
-    virtual bool checkMove(int de_file, int de_rank) = 0; //destination file, rank
+    virtual bool checkMove(int de_file, int de_rank, int &capture_file, int &capture_rank) = 0; //destination file, rank
     virtual bool canBeCapturedEnPassant();
+    virtual bool wasItMoved();
 };
 
 #endif

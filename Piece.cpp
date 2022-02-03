@@ -1,5 +1,9 @@
 #include "Piece.h"
 
+Piece::Piece() {
+}
+
+
 Piece::Piece(Color color, Chessboard *chessboard) {
     this->color = color;
     this->type = Type::TPiece;
@@ -37,4 +41,8 @@ void Piece::setPosition(int file, int rank) {
 
 bool Piece::canBeCapturedEnPassant() {
     return false;
+}
+
+bool Piece::wasItMoved() {
+    return true;
 }

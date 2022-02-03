@@ -21,8 +21,11 @@ private:
     // std::vector<Piece*> pieces;
     // std::vector<Piece> white_set;
     // std::vector<Piece> black_set;
-    //void move();
-    //void capture();
+
+    void capture(int piece_file, int piece_rank);
+    void castling(Piece *piece_to_move, int de_file, int de_rank);
+    void move(Piece *piece_to_move, int de_file, int de_rank);
+    void promote();
 
 public: 
     Chessboard();
@@ -32,10 +35,7 @@ public:
     bool isFileClear(int file, int from_rank, int to_rank);
     bool isDiagonalClear(int from_file, int from_rank, int to_file, int to_rank);
 
-    void promote();
-    void capture(int piece_file, int piece_rank);
-
-    void update();
+    void update(Piece *piece_to_move, int de_file, int de_rank, Piece *piece_to_capture);
 };
 
 #endif

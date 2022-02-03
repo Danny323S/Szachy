@@ -1,19 +1,9 @@
-make.exe --dry-run --always-make --keep-going --print-directory
+make.exe --dry-run --keep-going --print-directory
 make.exe: Wej�cie do katalogu `d:/Studia/Szachy'
-g++ -I src/include -c -Wall -Wextra -g3 main.cpp
-g++ -I src/include -c -Wall -Wextra -g3 Game.cpp
-g++ -I src/include -c -Wall -Wextra -g3 DisplayManager.cpp
 g++ -I src/include -c -Wall -Wextra -g3 Player.cpp
-g++ -I src/include -c -Wall -Wextra -g3 ChessBoard.cpp
-g++ -I src/include -c -Wall -Wextra -g3 Square.cpp
-g++ -I src/include -c -Wall -Wextra -g3 King.cpp
+ 
 g++ -I src/include -c -Wall -Wextra -g3 Pawn.cpp
-g++ -I src/include -c -Wall -Wextra -g3 Knight.cpp
-g++ -I src/include -c -Wall -Wextra -g3 Bishop.cpp
-g++ -I src/include -c -Wall -Wextra -g3 Rook.cpp
-g++ -I src/include -c -Wall -Wextra -g3 Queen.cpp
-g++ -I src/include -c -Wall -Wextra -g3 RestrictedPiece.cpp
-g++ -I src/include -c -Wall -Wextra -g3 Piece.cpp
+ 
 g++ -I src/include main.o Game.o DisplayManager.o Player.o ChessBoard.o Square.o King.o Pawn.o Knight.o Bishop.o Rook.o Queen.o RestrictedPiece.o Piece.o -o GameOfChess -L src/lib -l sfml-graphics -l sfml-window -l sfml-system
 ./GameOfChess
 make.exe: Opuszczenie katalogu `d:/Studia/Szachy'

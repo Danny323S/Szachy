@@ -12,6 +12,7 @@ private:
 
     Chessboard* chessboard;
     Piece* selected_piece;
+    Piece *piece_to_capture;
 
     // std::vector<Piece*> pieces_set;
     // King* king;
