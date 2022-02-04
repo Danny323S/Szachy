@@ -27,11 +27,10 @@ void Game::turn(int selected_piece_file, int selected_piece_rank, int destinatio
     if (board.getSquareAt(selected_piece_file,selected_piece_rank)->isOccupied()) {
         if (actual_player->selectPiece(selected_piece_file, selected_piece_rank)) {
             if(actual_player->movePiece(destination_file, destination_rank)) {
-                /*if(!chessboard.checkPromotion())*/
-                white_round = !white_round;
-                std::cout << "Koniec tury";
-                /*else promote(int choice)
-                */
+                if(!board.checkPromotion()) {
+                    white_round = !white_round;
+                    std::cout << "Koniec tury";
+                }
             } else {
                 std::cout << "Bierka nie może poruszyć się na dane pole";
             }

@@ -37,6 +37,7 @@ public:
     bool isDiagonalClear(int from_file, int from_rank, int to_file, int to_rank);
 
     void update(Piece *piece_to_move, int de_file, int de_rank, Piece *piece_to_capture);
+    bool checkPromotion();
 };
 
 #endif

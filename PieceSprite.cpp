@@ -2,6 +2,7 @@
 
 PieceSprite::PieceSprite(Piece *piece_ptr) {
     this->piece = piece_ptr;
+    // color = piece_ptr->getColor();
     main_window_size = sf::Vector2f(1000.0f, 1000.0f);
 }
 

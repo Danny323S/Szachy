@@ -14,18 +14,19 @@ private:
     sf::RenderWindow main_window;
     ChessboardSprite *chessboard_sprite;
     Game game;
-
-    void resizeMainWindow(sf::Vector2u new_size);
-    void render();
-
-
     bool quit;
-    sf::CircleShape shape;
 
     int pressed_file_1;
     int pressed_rank_1;
     int pressed_file_2;
     int pressed_rank_2;
+
+    void resizeMainWindow(sf::Vector2u new_size);
+    void render();
+
+
+    void promotion();
+    void makeMove();
 public:
     MainWindow();
     void run();

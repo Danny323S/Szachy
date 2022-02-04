@@ -57,6 +57,10 @@ std::vector<PieceSprite> *ChessboardSprite::getPiecesSprites() {
 
 void ChessboardSprite::updateSpritesPositions() {
     for (unsigned int i = 0; i < pieces_sprites.size(); i++) {
-        pieces_sprites.at(i).updatePosition();
+        if(pieces_sprites.at(i).getSpritePiece()->isActive()) {
+            pieces_sprites.at(i).updatePosition();
+        } else {
+            pieces_sprites.erase(pieces_sprites.begin() + i);
+        }
     }
 }

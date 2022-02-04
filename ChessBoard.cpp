@@ -125,6 +125,7 @@ bool Chessboard::isDiagonalClear(int from_file, int from_rank, int to_file, int 
 }
 
 void Chessboard::capture(int file, int rank) {
+    this->getSquareAt(file, rank)->getOccupant()->deactivate();
     delete this->getSquareAt(file, rank)->getOccupant();
     this->getSquareAt(file, rank)->setOccupant(nullptr);
 }
@@ -153,7 +154,7 @@ void Chessboard::move(Piece *piece_to_move, int de_file, int de_rank) {
     piece_to_move->hasMoved();
 }
 
-bool Chessboard::promote(int choice) {
+bool Chessboard::checkPromotion() {
     int piece_to_promote_file = -1, piece_to_promote_rank = -1;
 
     for (int file = 0; file < 8; file++) {
@@ -175,6 +176,6 @@ void Chessboard::update(Piece *piece_to_move, int de_file, int de_rank, Piece *p
     }
     castling(piece_to_move, de_file, de_rank);
     move(piece_to_move, de_file, de_rank);
-    promote();
+    // promote();
 }
 

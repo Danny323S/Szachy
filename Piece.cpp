@@ -1,11 +1,8 @@
 #include "Piece.h"
 
-Piece::Piece() {
-}
-
-
 Piece::Piece(Color color, Chessboard *chessboard) {
     this->color = color;
+    this->is_active = true;
     this->type = Type::TPiece;
     this->chessboard = chessboard;
 }
@@ -49,4 +46,12 @@ bool Piece::wasItMoved() {
 
 void Piece::hasMoved() {
     std::cout << "hasMoved() dla klasy Piece\n";
+}
+
+void Piece::deactivate() {
+    this->is_active = false;
+}
+
+bool Piece::isActive() {
+    return this->is_active;
 }

@@ -14,6 +14,7 @@ private:
     int file;
     int rank;
 
+    bool is_active;
     Color color;
     Chessboard *chessboard; 
 
@@ -25,6 +26,8 @@ public:
     Piece(Color color, Chessboard *chessboard);
     virtual ~Piece();
 
+    void deactivate();
+    bool isActive();
     Color getColor(); 
     Type getType();
     int getFile();

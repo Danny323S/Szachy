@@ -1,13 +1,11 @@
-#ifndef GAME_H
-#define GAME_H
+#ifndef GAMENEW_H
+#define GAMENWE_H
 #include <string.h>
 #include "Chessboard.h"
 #include "DisplayManager.h"
 #include "Player.h"
 
-
-
-class Game {
+class GameNew {
 private:
     bool white_round;
     bool is_running;
@@ -19,16 +17,16 @@ private:
     Player b_player;
 
 public:
-    Game();
+    GameNew();
     bool run(int selected_piece_file, int selected_piece_rank, int destination_file, int destination_rank);
-    void turn(int selected_piece_file, int selected_piece_rank, int destination_file, int destination_rank);
+    void turn(int selected_piece_file, int selected_piece_rank, int destination_file, int destination_rank);    
     Chessboard* getChessboard();
 
-    // bool selectPiece();
-    // bool chooseDestinationSquare();
+    bool selectPiece(int piece_to_select_file, int piece_to_select_rank);
+    bool chooseDestinationSquare();
     bool turn();
     bool promotion();
-    // bool endOfGame();
+    bool endOfGame();
 };
 
 #endif
